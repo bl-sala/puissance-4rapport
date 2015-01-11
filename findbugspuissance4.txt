@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="1" timestamp="1420990922151" analysisTimestamp="1420990905061" release="">
+  <Project projectName="puissance4">
+    <Jar>C:\Users\dellll\workspace\puissance4\bin</Jar>
+    <AuxClasspathEntry>C:\Users\dellll\workspace\puissance4\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\dellll\Downloads\bdd\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\dellll\Downloads\bdd\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre7\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\dellll\workspace\puissance4\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="main.Classement">
+      <SourceLine classname="main.Classement" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    </Class>
+    <Method classname="main.Classement" name="listePerso" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.Classement" start="16" end="27" startBytecode="0" endBytecode="42" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    </Method>
+    <LocalVariable name="input" register="2" pc="35" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="main.Classement" start="18" end="18" startBytecode="34" endBytecode="34" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    <SourceLine classname="main.Classement" start="18" end="18" startBytecode="34" endBytecode="34" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="input"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="main.Classement">
+      <SourceLine classname="main.Classement" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    </Class>
+    <Method classname="main.Classement" name="listePerso" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.Classement" start="16" end="27" startBytecode="0" endBytecode="244" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="main.Classement" start="18" end="18" startBytecode="31" endBytecode="31" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    <SourceLine classname="main.Classement" start="18" end="18" startBytecode="31" endBytecode="31" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="main.Classement">
+      <SourceLine classname="main.Classement" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    </Class>
+    <Method classname="main.Classement" name="chargementJoueurs" signature="()V" isStatic="false">
+      <SourceLine classname="main.Classement" start="32" end="55" startBytecode="0" endBytecode="57" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream"/>
+    </Type>
+    <SourceLine classname="main.Classement" start="40" end="40" startBytecode="59" endBytecode="59" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+    <SourceLine classname="main.Classement" start="40" end="40" startBytecode="59" endBytecode="59" sourcefile="Classement.java" sourcepath="main/Classement.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="main.Joueur">
+      <SourceLine classname="main.Joueur" sourcefile="Joueur.java" sourcepath="main/Joueur.java"/>
+    </Class>
+    <Method classname="main.Joueur" name="affichePerso" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Joueur" start="52" end="71" startBytecode="0" endBytecode="335" sourcefile="Joueur.java" sourcepath="main/Joueur.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="main.Joueur" start="54" end="54" startBytecode="31" endBytecode="31" sourcefile="Joueur.java" sourcepath="main/Joueur.java"/>
+    <SourceLine classname="main.Joueur" start="54" end="54" startBytecode="31" endBytecode="31" sourcefile="Joueur.java" sourcepath="main/Joueur.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="main.Joueur">
+      <SourceLine classname="main.Joueur" sourcefile="Joueur.java" sourcepath="main/Joueur.java"/>
+    </Class>
+    <Method classname="main.Joueur" name="chargement" signature="()Lmain/Joueur;" isStatic="false">
+      <SourceLine classname="main.Joueur" start="106" end="126" startBytecode="0" endBytecode="48" sourcefile="Joueur.java" sourcepath="main/Joueur.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream"/>
+    </Type>
+    <SourceLine classname="main.Joueur" start="110" end="110" startBytecode="36" endBytecode="36" sourcefile="Joueur.java" sourcepath="main/Joueur.java"/>
+    <SourceLine classname="main.Joueur" start="110" end="110" startBytecode="36" endBytecode="36" sourcefile="Joueur.java" sourcepath="main/Joueur.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="main.Partie">
+      <SourceLine classname="main.Partie" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+    </Class>
+    <Method classname="main.Partie" name="deroulement" signature="()V" isStatic="false">
+      <SourceLine classname="main.Partie" start="46" end="83" startBytecode="0" endBytecode="641" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="main.Partie" start="56" end="56" startBytecode="148" endBytecode="148" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+    <SourceLine classname="main.Partie" start="56" end="56" startBytecode="148" endBytecode="148" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Partie">
+      <SourceLine classname="main.Partie" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+    </Class>
+    <Method classname="main.Partie" name="&lt;init&gt;" signature="([Lmain/Joueur;)V" isStatic="false">
+      <SourceLine classname="main.Partie" start="11" end="15" startBytecode="0" endBytecode="96" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+    </Method>
+    <Field classname="main.Partie" name="joueurs" signature="[Lmain/Joueur;" isStatic="false">
+      <SourceLine classname="main.Partie" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+    </Field>
+    <LocalVariable name="tab" register="1" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="main.Partie" start="13" end="13" startBytecode="17" endBytecode="17" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+    <SourceLine classname="main.Partie" start="13" end="13" startBytecode="17" endBytecode="17" sourcefile="Partie.java" sourcepath="main/Partie.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="test.Menu">
+      <SourceLine classname="test.Menu" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    </Class>
+    <Method classname="test.Menu" name="affichageClassement" signature="()V" isStatic="false">
+      <SourceLine classname="test.Menu" start="22" end="23" startBytecode="0" endBytecode="4" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    </Method>
+    <LocalVariable name="m" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.Menu" start="22" end="22" startBytecode="7" endBytecode="7" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    <SourceLine classname="test.Menu" start="22" end="22" startBytecode="7" endBytecode="7" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="m"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="test.Menu">
+      <SourceLine classname="test.Menu" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    </Class>
+    <Method classname="test.Menu" name="affichage" signature="()V" isStatic="false">
+      <SourceLine classname="test.Menu" start="50" end="79" startBytecode="0" endBytecode="322" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="test.Menu" start="50" end="50" startBytecode="7" endBytecode="7" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    <SourceLine classname="test.Menu" start="50" end="50" startBytecode="7" endBytecode="7" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="test.Menu">
+      <SourceLine classname="test.Menu" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    </Class>
+    <Method classname="test.Menu" name="creerJoueurs" signature="()V" isStatic="false">
+      <SourceLine classname="test.Menu" start="13" end="19" startBytecode="0" endBytecode="124" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="test.Menu" start="13" end="13" startBytecode="7" endBytecode="7" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+    <SourceLine classname="test.Menu" start="13" end="13" startBytecode="7" endBytecode="7" sourcefile="Menu.java" sourcepath="test/Menu.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="test.MenuTest">
+      <SourceLine classname="test.MenuTest" sourcefile="MenuTest.java" sourcepath="test/MenuTest.java"/>
+    </Class>
+    <Method classname="test.MenuTest" name="testAffichageClassement" signature="()V" isStatic="false">
+      <SourceLine classname="test.MenuTest" start="36" end="37" startBytecode="0" endBytecode="4" sourcefile="MenuTest.java" sourcepath="test/MenuTest.java"/>
+    </Method>
+    <LocalVariable name="m" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test.MenuTest" start="36" end="36" startBytecode="7" endBytecode="7" sourcefile="MenuTest.java" sourcepath="test/MenuTest.java"/>
+    <SourceLine classname="test.MenuTest" start="36" end="36" startBytecode="7" endBytecode="7" sourcefile="MenuTest.java" sourcepath="test/MenuTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="m"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="test.MenuTest">
+      <SourceLine classname="test.MenuTest" sourcefile="MenuTest.java" sourcepath="test/MenuTest.java"/>
+    </Class>
+    <Method classname="test.MenuTest" name="testCreerJoueurs" signature="()V" isStatic="false">
+      <SourceLine classname="test.MenuTest" start="26" end="32" startBytecode="0" endBytecode="124" sourcefile="MenuTest.java" sourcepath="test/MenuTest.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="test.MenuTest" start="26" end="26" startBytecode="7" endBytecode="7" sourcefile="MenuTest.java" sourcepath="test/MenuTest.java"/>
+    <SourceLine classname="test.MenuTest" start="26" end="26" startBytecode="7" endBytecode="7" sourcefile="MenuTest.java" sourcepath="test/MenuTest.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 11 Jan 2015 16:27:14 +0100" total_classes="7" referenced_classes="38" total_bugs="12" total_size="437" num_packages="2" java_version="1.7.0_67" vm_version="24.65-b04" cpu_seconds="23.17" clock_seconds="17.11" peak_mbytes="270.93" alloc_mbytes="455.00" gc_seconds="0.06" priority_2="3" priority_1="9">
+    <PackageStats package="main" total_bugs="7" total_types="5" total_size="345" priority_2="3" priority_1="4">
+      <ClassStats class="main.Case" sourceFile="Case.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="main.Classement" sourceFile="Classement.java" interface="false" size="40" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="main.Grille" sourceFile="Grille.java" interface="false" size="147" bugs="0"/>
+      <ClassStats class="main.Joueur" sourceFile="Joueur.java" interface="false" size="80" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="main.Partie" sourceFile="Partie.java" interface="false" size="58" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="test" total_bugs="5" total_types="2" total_size="92" priority_1="5">
+      <ClassStats class="test.Menu" sourceFile="Menu.java" interface="false" size="54" bugs="3" priority_1="3"/>
+      <ClassStats class="test.MenuTest" sourceFile="MenuTest.java" interface="false" size="38" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1245" invocations="2" avgMicrosecondsPerInvocation="622671" maxMicrosecondsPerInvocation="947541" standardDeviationMircosecondsPerInvocation="324870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="573" invocations="435" avgMicrosecondsPerInvocation="1319" maxMicrosecondsPerInvocation="48616" standardDeviationMircosecondsPerInvocation="3413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="498" invocations="38" avgMicrosecondsPerInvocation="13117" maxMicrosecondsPerInvocation="68051" standardDeviationMircosecondsPerInvocation="19697"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="370" invocations="165" avgMicrosecondsPerInvocation="2242" maxMicrosecondsPerInvocation="15825" standardDeviationMircosecondsPerInvocation="2701"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="280" invocations="58" avgMicrosecondsPerInvocation="4828" maxMicrosecondsPerInvocation="37455" standardDeviationMircosecondsPerInvocation="8854"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="273" invocations="54" avgMicrosecondsPerInvocation="5066" maxMicrosecondsPerInvocation="25630" standardDeviationMircosecondsPerInvocation="7280"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="263" invocations="54" avgMicrosecondsPerInvocation="4886" maxMicrosecondsPerInvocation="28519" standardDeviationMircosecondsPerInvocation="7619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="234" invocations="58" avgMicrosecondsPerInvocation="4044" maxMicrosecondsPerInvocation="22903" standardDeviationMircosecondsPerInvocation="5619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="206" invocations="54" avgMicrosecondsPerInvocation="3828" maxMicrosecondsPerInvocation="27254" standardDeviationMircosecondsPerInvocation="5878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="184" invocations="54" avgMicrosecondsPerInvocation="3417" maxMicrosecondsPerInvocation="88306" standardDeviationMircosecondsPerInvocation="11861"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="171" invocations="7" avgMicrosecondsPerInvocation="24481" maxMicrosecondsPerInvocation="78274" standardDeviationMircosecondsPerInvocation="30735"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="163" invocations="43" avgMicrosecondsPerInvocation="3810" maxMicrosecondsPerInvocation="13504" standardDeviationMircosecondsPerInvocation="3810"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="137" invocations="54" avgMicrosecondsPerInvocation="2545" maxMicrosecondsPerInvocation="17503" standardDeviationMircosecondsPerInvocation="4635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="127" invocations="38" avgMicrosecondsPerInvocation="3352" maxMicrosecondsPerInvocation="16920" standardDeviationMircosecondsPerInvocation="4453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="113" invocations="54" avgMicrosecondsPerInvocation="2106" maxMicrosecondsPerInvocation="98949" standardDeviationMircosecondsPerInvocation="13304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="107" invocations="38" avgMicrosecondsPerInvocation="2838" maxMicrosecondsPerInvocation="12496" standardDeviationMircosecondsPerInvocation="3180"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="107" invocations="38" avgMicrosecondsPerInvocation="2817" maxMicrosecondsPerInvocation="24925" standardDeviationMircosecondsPerInvocation="5121"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1420990922141" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
